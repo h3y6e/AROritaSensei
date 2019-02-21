@@ -1,0 +1,595 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BC29BD5A221EFC52007A06BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC29BD59221EFC52007A06BD /* AppDelegate.swift */; };
+		BC29BD5C221EFC52007A06BD /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = BC29BD5B221EFC52007A06BD /* art.scnassets */; };
+		BC29BD5E221EFC52007A06BD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC29BD5D221EFC52007A06BD /* ViewController.swift */; };
+		BC29BD61221EFC52007A06BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC29BD5F221EFC52007A06BD /* Main.storyboard */; };
+		BC29BD63221EFC55007A06BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC29BD62221EFC55007A06BD /* Assets.xcassets */; };
+		BC29BD66221EFC55007A06BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC29BD64221EFC55007A06BD /* LaunchScreen.storyboard */; };
+		BC29BD71221EFC55007A06BD /* AROritaSenseiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC29BD70221EFC55007A06BD /* AROritaSenseiTests.swift */; };
+		BC29BD7C221EFC55007A06BD /* AROritaSenseiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC29BD7B221EFC55007A06BD /* AROritaSenseiUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BC29BD6D221EFC55007A06BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BC29BD4E221EFC52007A06BD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BC29BD55221EFC52007A06BD;
+			remoteInfo = AROritaSensei;
+		};
+		BC29BD78221EFC55007A06BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BC29BD4E221EFC52007A06BD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BC29BD55221EFC52007A06BD;
+			remoteInfo = AROritaSensei;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BC29BD56221EFC52007A06BD /* AROritaSensei.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AROritaSensei.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC29BD59221EFC52007A06BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BC29BD5B221EFC52007A06BD /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
+		BC29BD5D221EFC52007A06BD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BC29BD60221EFC52007A06BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BC29BD62221EFC55007A06BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BC29BD65221EFC55007A06BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BC29BD67221EFC55007A06BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC29BD6C221EFC55007A06BD /* AROritaSenseiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AROritaSenseiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC29BD70221EFC55007A06BD /* AROritaSenseiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AROritaSenseiTests.swift; sourceTree = "<group>"; };
+		BC29BD72221EFC55007A06BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC29BD77221EFC55007A06BD /* AROritaSenseiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AROritaSenseiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC29BD7B221EFC55007A06BD /* AROritaSenseiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AROritaSenseiUITests.swift; sourceTree = "<group>"; };
+		BC29BD7D221EFC55007A06BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BC29BD53221EFC52007A06BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC29BD69221EFC55007A06BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC29BD74221EFC55007A06BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BC29BD4D221EFC52007A06BD = {
+			isa = PBXGroup;
+			children = (
+				BC29BD58221EFC52007A06BD /* AROritaSensei */,
+				BC29BD6F221EFC55007A06BD /* AROritaSenseiTests */,
+				BC29BD7A221EFC55007A06BD /* AROritaSenseiUITests */,
+				BC29BD57221EFC52007A06BD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BC29BD57221EFC52007A06BD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BC29BD56221EFC52007A06BD /* AROritaSensei.app */,
+				BC29BD6C221EFC55007A06BD /* AROritaSenseiTests.xctest */,
+				BC29BD77221EFC55007A06BD /* AROritaSenseiUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BC29BD58221EFC52007A06BD /* AROritaSensei */ = {
+			isa = PBXGroup;
+			children = (
+				BC29BD59221EFC52007A06BD /* AppDelegate.swift */,
+				BC29BD5B221EFC52007A06BD /* art.scnassets */,
+				BC29BD5D221EFC52007A06BD /* ViewController.swift */,
+				BC29BD5F221EFC52007A06BD /* Main.storyboard */,
+				BC29BD62221EFC55007A06BD /* Assets.xcassets */,
+				BC29BD64221EFC55007A06BD /* LaunchScreen.storyboard */,
+				BC29BD67221EFC55007A06BD /* Info.plist */,
+			);
+			path = AROritaSensei;
+			sourceTree = "<group>";
+		};
+		BC29BD6F221EFC55007A06BD /* AROritaSenseiTests */ = {
+			isa = PBXGroup;
+			children = (
+				BC29BD70221EFC55007A06BD /* AROritaSenseiTests.swift */,
+				BC29BD72221EFC55007A06BD /* Info.plist */,
+			);
+			path = AROritaSenseiTests;
+			sourceTree = "<group>";
+		};
+		BC29BD7A221EFC55007A06BD /* AROritaSenseiUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BC29BD7B221EFC55007A06BD /* AROritaSenseiUITests.swift */,
+				BC29BD7D221EFC55007A06BD /* Info.plist */,
+			);
+			path = AROritaSenseiUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BC29BD55221EFC52007A06BD /* AROritaSensei */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC29BD80221EFC55007A06BD /* Build configuration list for PBXNativeTarget "AROritaSensei" */;
+			buildPhases = (
+				BC29BD52221EFC52007A06BD /* Sources */,
+				BC29BD53221EFC52007A06BD /* Frameworks */,
+				BC29BD54221EFC52007A06BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AROritaSensei;
+			productName = AROritaSensei;
+			productReference = BC29BD56221EFC52007A06BD /* AROritaSensei.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BC29BD6B221EFC55007A06BD /* AROritaSenseiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC29BD83221EFC55007A06BD /* Build configuration list for PBXNativeTarget "AROritaSenseiTests" */;
+			buildPhases = (
+				BC29BD68221EFC55007A06BD /* Sources */,
+				BC29BD69221EFC55007A06BD /* Frameworks */,
+				BC29BD6A221EFC55007A06BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BC29BD6E221EFC55007A06BD /* PBXTargetDependency */,
+			);
+			name = AROritaSenseiTests;
+			productName = AROritaSenseiTests;
+			productReference = BC29BD6C221EFC55007A06BD /* AROritaSenseiTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BC29BD76221EFC55007A06BD /* AROritaSenseiUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC29BD86221EFC55007A06BD /* Build configuration list for PBXNativeTarget "AROritaSenseiUITests" */;
+			buildPhases = (
+				BC29BD73221EFC55007A06BD /* Sources */,
+				BC29BD74221EFC55007A06BD /* Frameworks */,
+				BC29BD75221EFC55007A06BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BC29BD79221EFC55007A06BD /* PBXTargetDependency */,
+			);
+			name = AROritaSenseiUITests;
+			productName = AROritaSenseiUITests;
+			productReference = BC29BD77221EFC55007A06BD /* AROritaSenseiUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BC29BD4E221EFC52007A06BD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "KAWASE Hiroya";
+				TargetAttributes = {
+					BC29BD55221EFC52007A06BD = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					BC29BD6B221EFC55007A06BD = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = BC29BD55221EFC52007A06BD;
+					};
+					BC29BD76221EFC55007A06BD = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = BC29BD55221EFC52007A06BD;
+					};
+				};
+			};
+			buildConfigurationList = BC29BD51221EFC52007A06BD /* Build configuration list for PBXProject "AROritaSensei" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BC29BD4D221EFC52007A06BD;
+			productRefGroup = BC29BD57221EFC52007A06BD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BC29BD55221EFC52007A06BD /* AROritaSensei */,
+				BC29BD6B221EFC55007A06BD /* AROritaSenseiTests */,
+				BC29BD76221EFC55007A06BD /* AROritaSenseiUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BC29BD54221EFC52007A06BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC29BD5C221EFC52007A06BD /* art.scnassets in Resources */,
+				BC29BD66221EFC55007A06BD /* LaunchScreen.storyboard in Resources */,
+				BC29BD63221EFC55007A06BD /* Assets.xcassets in Resources */,
+				BC29BD61221EFC52007A06BD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC29BD6A221EFC55007A06BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC29BD75221EFC55007A06BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BC29BD52221EFC52007A06BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC29BD5E221EFC52007A06BD /* ViewController.swift in Sources */,
+				BC29BD5A221EFC52007A06BD /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC29BD68221EFC55007A06BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC29BD71221EFC55007A06BD /* AROritaSenseiTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC29BD73221EFC55007A06BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC29BD7C221EFC55007A06BD /* AROritaSenseiUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BC29BD6E221EFC55007A06BD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BC29BD55221EFC52007A06BD /* AROritaSensei */;
+			targetProxy = BC29BD6D221EFC55007A06BD /* PBXContainerItemProxy */;
+		};
+		BC29BD79221EFC55007A06BD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BC29BD55221EFC52007A06BD /* AROritaSensei */;
+			targetProxy = BC29BD78221EFC55007A06BD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BC29BD5F221EFC52007A06BD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BC29BD60221EFC52007A06BD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BC29BD64221EFC55007A06BD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BC29BD65221EFC55007A06BD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BC29BD7E221EFC55007A06BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BC29BD7F221EFC55007A06BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BC29BD81221EFC55007A06BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 85PG4K3WC6;
+				INFOPLIST_FILE = AROritaSensei/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.5ebec.AROritaSensei;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BC29BD82221EFC55007A06BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 85PG4K3WC6;
+				INFOPLIST_FILE = AROritaSensei/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.5ebec.AROritaSensei;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BC29BD84221EFC55007A06BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 85PG4K3WC6;
+				INFOPLIST_FILE = AROritaSenseiTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.5ebec.AROritaSenseiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AROritaSensei.app/AROritaSensei";
+			};
+			name = Debug;
+		};
+		BC29BD85221EFC55007A06BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 85PG4K3WC6;
+				INFOPLIST_FILE = AROritaSenseiTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.5ebec.AROritaSenseiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AROritaSensei.app/AROritaSensei";
+			};
+			name = Release;
+		};
+		BC29BD87221EFC55007A06BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 85PG4K3WC6;
+				INFOPLIST_FILE = AROritaSenseiUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.5ebec.AROritaSenseiUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AROritaSensei;
+			};
+			name = Debug;
+		};
+		BC29BD88221EFC55007A06BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 85PG4K3WC6;
+				INFOPLIST_FILE = AROritaSenseiUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.5ebec.AROritaSenseiUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AROritaSensei;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BC29BD51221EFC52007A06BD /* Build configuration list for PBXProject "AROritaSensei" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC29BD7E221EFC55007A06BD /* Debug */,
+				BC29BD7F221EFC55007A06BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC29BD80221EFC55007A06BD /* Build configuration list for PBXNativeTarget "AROritaSensei" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC29BD81221EFC55007A06BD /* Debug */,
+				BC29BD82221EFC55007A06BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC29BD83221EFC55007A06BD /* Build configuration list for PBXNativeTarget "AROritaSenseiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC29BD84221EFC55007A06BD /* Debug */,
+				BC29BD85221EFC55007A06BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC29BD86221EFC55007A06BD /* Build configuration list for PBXNativeTarget "AROritaSenseiUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC29BD87221EFC55007A06BD /* Debug */,
+				BC29BD88221EFC55007A06BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BC29BD4E221EFC52007A06BD /* Project object */;
+}
