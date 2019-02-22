@@ -14,9 +14,6 @@ class ViewController: UIViewController, ARSCNViewDelegate {
 
     @IBOutlet var sceneView: ARSCNView!
     
-    var planeNodes: [PlaneNode] = []
-    var statueNode: SCNNode?
-    
     // Hide status bar
     override var prefersStatusBarHidden: Bool {
         return true
@@ -45,31 +42,22 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         sceneView.scene = scene
         
         // Add tap gesture
-        let gesture = UITapGestureRecognizer(target: self, action: #selector(tapView))
-        sceneView.addGestureRecognizer(gesture)
+//        let gesture = UITapGestureRecognizer(target: self, action: #selector(tapView))
+//        sceneView.addGestureRecognizer(gesture)
     }
     
     // Tap View
-    @objc func tapView(recognizer: UIGestureRecognizer) {
-        if statueNode != nil {
-            statueNode?.removeFromParentNode()
-            return
-        }
-        
-        let sceneView = recognizer.view as! ARSCNView
-        let touchLocation = recognizer.location(in: sceneView)
-        
-        let hitTestResult = sceneView.hitTest(touchLocation, types: .existingPlaneUsingExtent)
-        if !hitTestResult.isEmpty {
-            if let hitResult = hitTestResult.first {
-                
-                statueNode = Statue.create(width: 1.5)
-                statueNode?.position = SCNVector3(hitResult.worldTransform.columns.3.x, hitResult.worldTransform.columns.3.y + Float(0.1), hitResult.worldTransform.columns.3.z)
-                sceneView.scene.rootNode.addChildNode(statueNode!)
-            }
-        }
-        
-    }
+//    @objc func tapView(recognizer: UIGestureRecognizer) {
+//
+//        let sceneView = recognizer.view as! ARSCNView
+//        let touchLocation = recognizer.location(in: sceneView)
+//
+//        let hitTestResult = sceneView.hitTest(touchLocation, types: .existingPlaneUsingExtent)
+//        if !hitTestResult.isEmpty {
+//            if let hitResult = hitTestResult.first {
+//            }
+//        }
+//    }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -79,6 +67,9 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         
         // Activate horizontal plane detection
         configuration.planeDetection = .horizontal
+        
+        // Adapt light infomation on screen
+        configuration.isLightEstimationEnabled = true
 
         // Run the view's session
         sceneView.session.run(configuration)
@@ -90,27 +81,17 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         // Pause the view's session
         sceneView.session.pause()
     }
+    
+    func loadStatue() -> SCNNode {
+        let url = Bundle.main.url(forResource: "art.scnassets/shyguy", withExtension: "dae")!
+        let statueSceneSource = SCNSceneSource(url: url, options: nil)!
+        let statueNode = statueSceneSource.entryWithIdentifier("statue", withClass: SCNNode.self)!
+        return statueNode
+    }
 
     // MARK: - ARSCNViewDelegate
-    // Add plane node
     func renderer(_ renderer: SCNSceneRenderer, didAdd node: SCNNode, for anchor: ARAnchor) {
-        DispatchQueue.main.async {
-            if let planeAnchor = anchor as? ARPlaneAnchor {
-                let panelNode = PlaneNode(anchor: planeAnchor)
-                panelNode.isDisplay = true
-                
-                node.addChildNode(panelNode)
-                self.planeNodes.append(panelNode)
-            }
-        }
-    }
-    
-    // Update plane node
-    func renderer(_ renderer: SCNSceneRenderer, didUpdate node: SCNNode, for anchor: ARAnchor) {
-        DispatchQueue.main.async {
-            if let planeAnchor = anchor as? ARPlaneAnchor, let planeNode = node.childNodes[0] as? PlaneNode {
-                planeNode.update(anchor: planeAnchor)
-            }
-        }
+        node.addChildNode(loadStatue())
+
     }
 }

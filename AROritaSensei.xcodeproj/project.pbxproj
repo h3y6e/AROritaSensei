@@ -14,7 +14,6 @@
 		BC29BD63221EFC55007A06BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC29BD62221EFC55007A06BD /* Assets.xcassets */; };
 		BC29BD66221EFC55007A06BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC29BD64221EFC55007A06BD /* LaunchScreen.storyboard */; };
 		BC29BD8C22202D02007A06BD /* Statue.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC29BD8B22202D02007A06BD /* Statue.swift */; };
-		BC29BD8E22202FD8007A06BD /* PlaneNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC29BD8D22202FD8007A06BD /* PlaneNode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,7 +45,6 @@
 		BC29BD6C221EFC55007A06BD /* AROritaSenseiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AROritaSenseiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC29BD77221EFC55007A06BD /* AROritaSenseiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AROritaSenseiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC29BD8B22202D02007A06BD /* Statue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Statue.swift; sourceTree = "<group>"; };
-		BC29BD8D22202FD8007A06BD /* PlaneNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaneNode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,7 +97,6 @@
 				BC29BD5B221EFC52007A06BD /* art.scnassets */,
 				BC29BD5D221EFC52007A06BD /* ViewController.swift */,
 				BC29BD8B22202D02007A06BD /* Statue.swift */,
-				BC29BD8D22202FD8007A06BD /* PlaneNode.swift */,
 				BC29BD5F221EFC52007A06BD /* Main.storyboard */,
 				BC29BD62221EFC55007A06BD /* Assets.xcassets */,
 				BC29BD64221EFC55007A06BD /* LaunchScreen.storyboard */,
@@ -240,7 +237,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC29BD8E22202FD8007A06BD /* PlaneNode.swift in Sources */,
 				BC29BD5E221EFC52007A06BD /* ViewController.swift in Sources */,
 				BC29BD5A221EFC52007A06BD /* AppDelegate.swift in Sources */,
 				BC29BD8C22202D02007A06BD /* Statue.swift in Sources */,

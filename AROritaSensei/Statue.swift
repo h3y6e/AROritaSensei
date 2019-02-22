@@ -10,21 +10,28 @@ import UIKit
 import SceneKit
 import ARKit
 
-class Statue {
+class Statue: SCNNode {
+    fileprivate override init() {
+        super.init()
+    }
     
-    static func create(width: CGFloat) -> SCNNode {
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    init(size: CGFloat, hitResult: ARHitTestResult) {
+        super.init()
 
-        let scene = SCNScene(named: "art.scnassets/ship.scn")!
+        let scene = SCNScene(named: "art.scnassets/shyguy.dae")!
         let node = scene.rootNode.childNode(withName: "statue", recursively: true)
         
-        let (min, max) = (node?.boundingBox)!
-        let w = CGFloat(max.x - min.x)
-        let magnification = width / w
-        node?.scale = SCNVector3(magnification, magnification, magnification)
         node?.physicsBody = SCNPhysicsBody(type: .dynamic, shape: nil)
         node?.physicsBody?.categoryBitMask = 1
         node?.physicsBody?.restitution = 0
         node?.physicsBody?.damping = 1
-        return node!
+        position = SCNVector3(hitResult.worldTransform.columns.3.x,
+                              hitResult.worldTransform.columns.3.y + Float(0.1),
+                              hitResult.worldTransform.columns.3.z)
+
     }
 }
