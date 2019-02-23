@@ -14,7 +14,7 @@ class Statue {
     static func create(width: CGFloat, angles: SCNVector3, hitResult: ARHitTestResult) -> SCNNode{
         
         // Create a scene from assets
-        let scene = SCNScene(named: "art.scnassets/shyguy.scn")!
+        let scene = SCNScene(named: "art.scnassets/shyguy.dae")!
         
         // Create a node
         let node = SCNNode()

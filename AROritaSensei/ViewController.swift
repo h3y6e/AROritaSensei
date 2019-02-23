@@ -54,7 +54,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
                 if statueNode == nil {
                     
                     // Create a statue
-                    statueNode = Statue.create(width: 0.05, angles: camera.eulerAngles, hitResult: hitTestResult.first!)
+                    statueNode = Statue.create(width: 0.1, angles: camera.eulerAngles, hitResult: hitTestResult.first!)
                     sceneView.scene.rootNode.addChildNode(statueNode!)
                 } else {
                     
