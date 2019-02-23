@@ -13,15 +13,11 @@ import ARKit
 class ViewController: UIViewController, ARSCNViewDelegate {
 
     @IBOutlet var sceneView: ARSCNView!
+    var statueNode: SCNNode? = nil
     
     // Hide status bar
-    override var prefersStatusBarHidden: Bool {
-        return true
-    }
-    override var preferredStatusBarUpdateAnimation: UIStatusBarAnimation {
-        return .slide
-        
-    }
+    override var prefersStatusBarHidden: Bool { return true }
+    override var preferredStatusBarUpdateAnimation: UIStatusBarAnimation { return .slide }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,22 +38,32 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         sceneView.scene = scene
         
         // Add tap gesture
-//        let gesture = UITapGestureRecognizer(target: self, action: #selector(tapView))
-//        sceneView.addGestureRecognizer(gesture)
+        sceneView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(tapView)))
     }
     
-    // Tap View
-//    @objc func tapView(recognizer: UIGestureRecognizer) {
-//
-//        let sceneView = recognizer.view as! ARSCNView
-//        let touchLocation = recognizer.location(in: sceneView)
-//
-//        let hitTestResult = sceneView.hitTest(touchLocation, types: .existingPlaneUsingExtent)
-//        if !hitTestResult.isEmpty {
-//            if let hitResult = hitTestResult.first {
-//            }
-//        }
-//    }
+    @objc func tapView(recognizer: UIGestureRecognizer) {
+        let sceneView = recognizer.view as! ARSCNView
+        let touchLocation = recognizer.location(in: sceneView)
+        
+        // Get point coplanar with an already detected plane
+        let hitTestResult = sceneView.hitTest(touchLocation, types: .existingPlane)
+        if !hitTestResult.isEmpty {
+            
+            // Get camera information
+            if let camera = sceneView.pointOfView {
+                if statueNode == nil {
+                    
+                    // Create a statue
+                    statueNode = Statue.create(width: 0.05, angles: camera.eulerAngles, hitResult: hitTestResult.first!)
+                    sceneView.scene.rootNode.addChildNode(statueNode!)
+                } else {
+                    
+                    // Update statue's angles and position
+                    Statue.update(node: statueNode!, angles: camera.eulerAngles, hitResult: hitTestResult.first!)
+                }
+            }
+        }
+    }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -80,18 +86,5 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         
         // Pause the view's session
         sceneView.session.pause()
-    }
-    
-    func loadStatue() -> SCNNode {
-        let url = Bundle.main.url(forResource: "art.scnassets/shyguy", withExtension: "dae")!
-        let statueSceneSource = SCNSceneSource(url: url, options: nil)!
-        let statueNode = statueSceneSource.entryWithIdentifier("statue", withClass: SCNNode.self)!
-        return statueNode
-    }
-
-    // MARK: - ARSCNViewDelegate
-    func renderer(_ renderer: SCNSceneRenderer, didAdd node: SCNNode, for anchor: ARAnchor) {
-        node.addChildNode(loadStatue())
-
     }
 }

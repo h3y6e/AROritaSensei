@@ -10,28 +10,42 @@ import UIKit
 import SceneKit
 import ARKit
 
-class Statue: SCNNode {
-    fileprivate override init() {
-        super.init()
-    }
-    
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
-    init(size: CGFloat, hitResult: ARHitTestResult) {
-        super.init()
-
-        let scene = SCNScene(named: "art.scnassets/shyguy.dae")!
-        let node = scene.rootNode.childNode(withName: "statue", recursively: true)
+class Statue {
+    static func create(width: CGFloat, angles: SCNVector3, hitResult: ARHitTestResult) -> SCNNode{
         
-        node?.physicsBody = SCNPhysicsBody(type: .dynamic, shape: nil)
-        node?.physicsBody?.categoryBitMask = 1
-        node?.physicsBody?.restitution = 0
-        node?.physicsBody?.damping = 1
-        position = SCNVector3(hitResult.worldTransform.columns.3.x,
-                              hitResult.worldTransform.columns.3.y + Float(0.1),
-                              hitResult.worldTransform.columns.3.z)
-
+        // Create a scene from assets
+        let scene = SCNScene(named: "art.scnassets/shyguy.scn")!
+        
+        // Create a node
+        let node = SCNNode()
+        for childNode in scene.rootNode.childNodes {
+            node.addChildNode(childNode)
+        }
+        
+        // Set scale
+        let (min, max) = (node.boundingBox)
+        let magnification = width / CGFloat(max.x - min.x)
+        node.scale = SCNVector3(magnification, magnification, magnification)
+        
+        // Set position
+        node.position = SCNVector3(hitResult.worldTransform.columns.3.x,
+                                   hitResult.worldTransform.columns.3.y,
+                                   hitResult.worldTransform.columns.3.z)
+        
+        // Set y angles
+        node.eulerAngles.y = angles.y
+        
+        return node
+    }
+    
+    static func update(node: SCNNode?, angles: SCNVector3, hitResult: ARHitTestResult) {
+        
+        // Update x and z position
+        node?.position.x = hitResult.worldTransform.columns.3.x
+        node?.position.z = hitResult.worldTransform.columns.3.z
+        
+        // Update y angles
+        node?.eulerAngles.y = angles.y
+        return
     }
 }
